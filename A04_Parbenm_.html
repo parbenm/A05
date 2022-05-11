@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 4</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Free Web Tutorials">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        /*--I chose colors close to a hockey teams jersey I like a lot*/
+    /*#4ECCFF #511D1D #D9DADA*/
+    /*Blue for header Band/little accents as well, Maroon for text
+    Grey Bakcground and white foreground*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 {grid-area: title;}
+.item5 { grid-area: body;}
+.item6 { grid-area: img; }
+.item7 { grid-area: right; }
+.item8 { grid-area: footer;}
+
+.grid-container {
+    Display:grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main main right'
+    'menu img img img img right'
+    'menu title title title  title right'
+    'menu body body body body right'
+    'footer footer footer footer footer footer';
+    grid-template-rows: 75px 75px 300px 75px 500px 100px;
+    gap: 0px;
+    background-color: #D9DADA;
+    padding: 0px;
+}
+.grid-container > div {
+    padding: 20px 0;
+    font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #4ECCFF;
+    }
+}
+.item1 {
+background-color: #4ECCFF;
+color: white;
+word-spacing: 37px;
+text-align: center;
+}
+.item2 {
+    background-color: #D9DADA;
+}
+.item3 {
+    background-color: white;
+    color: #511D1D;
+    text-align: center;
+}
+.item4 {
+    background-color: white;
+    color: #511D1D;
+    text-align: center;
+    word-spacing: 125px;
+    
+}
+.item5 {
+    background-color: white;
+}
+.item6 {
+    background-color:white;
+    text-align: center;
+}
+.item7 {
+    background-color: #D9DADA;
+    text-align: center;
+}
+.item8 {
+    background-color: #4ECCFF;
+    color: white;
+    text-align: center;
+}
+img {
+    max-width: 200px;
+}
+</style>
+</head>
+<body> 
+    
+    <div class="grid-container">
+        <div class="item1">A / AnimeLaser / Home / Products / About-us / FAQ</div>
+        <div class="item2"></div>
+        <div class="item3">About Our Products </div>  
+        <div class="item4"> Candles Mug Wallet Flask Choppers</div>
+        <div class="item5"></div>
+        <div class="item6">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/basic candle.jpg">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/yeti.jpg">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/wallet.jpg">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/flask.jpg">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/choppers.jpg">
+            <img src="/Users/parbenm/Documents/Intro to Web Lang/Assignment 4/IMG/bottle opener.jpg">
+        </div>
+        <div class="item7"></div>
+        <div class="item8">Footer</div>
+        <div>
+
+</body>
+</html>
